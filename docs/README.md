@@ -1,3 +1,6 @@
-## Welcome to your doom!
+---
+title: Welcome to your doom!
+layout: post
+---
 
 competition instructions
