@@ -1,3 +1,3 @@
-##Welcome to your doom!
+## Welcome to your doom!
 
 competition instructions
