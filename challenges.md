@@ -23,18 +23,22 @@ The next flag is stored in a hidden file in the **hidden** directory.
 
 ##### Flag 4 - space
 Flag 4 is stored in a file called **spaces in this filename** in the home directory
+###### Helpful commands
+`cd, ls, cat, file, find, du`
+
+
+##### Flag 5 - lost
+This flag is hidden somewhere in the **lost** directory.
+Still need to hide this flag and determine how to find it...
+###### Helpful commands
+`cd, ls, cat, file, find, du`
+
+
+##### Flag 6 - execute
+This flag is output when you run the **execute_me** program in the home directory.
 
 ###### Helpful commands
-
-
-##### Flag 
-
-###### Helpful commands
-
-
-##### Flag 
-
-###### Helpful commands
+`cd, ls, cat, file, find, du`
 
 
 ##### Flag 
