@@ -55,5 +55,11 @@ netcat a local port and it returns a coin
 
 ###### Helpful commands
 
-### Challenge 2 - Mining
-Now that you are getting familiar with linux
+### Challenge 2 - The rest of the farm
+Now that you are getting familiar with Farmer Joe's local linux system, lets take a look at his network.
+
+nmap fjserver
+5 ports open
+80/443
+22
+
