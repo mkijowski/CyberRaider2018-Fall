@@ -36,14 +36,24 @@ Still need to hide this flag and determine how to find it...
 
 ##### Flag 6 - execute
 This flag is output when you run the **execute_me** program in the home directory.
-
 ###### Helpful commands
 `cd, ls, cat, file, find, du`
 
 
-##### Flag 
+##### Flags 7 & 8 - alike
+Two files in the **alike** directory have the same contents.  Flags 7 and 8 are the names of these two files.
+###### Helpful commands
+`cd, ls, md5sum, diff`
+
+
+##### Flag 9 - 
+netcat a local port and it returns a coin
+###### Helpful commands
+
+
+##### Flag 10 - 
 
 ###### Helpful commands
-##### Flag 
 
-###### Helpful commands
+### Challenge 2 - Mining
+Now that you are getting familiar with linux
