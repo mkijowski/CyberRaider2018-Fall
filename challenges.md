@@ -1,5 +1,5 @@
 ### Challenge 1 - Find the flags
-Farmer Joe has hidden several flags around his OS.  Use the clues to recover them.
+Farmer Joe has hidden several flags (coins) around his OS.  Use the clues to recover them.
 
 #### Clues
 
@@ -56,13 +56,18 @@ Flag 10 is cr18{ddb27bb966d3f3644a38a026c5e33c1a}.  I wonder where I got these h
 `???, md5sum, /usr/share/dict/american-english, for`
 
 ### Challenge 2 - The rest of the farm
-Now that you are getting familiar with Farmer Joe's local linux system, lets take a look at his network.
+Now that you are getting familiar with Farmer Joe's local linux system, lets take a look at his network.  There are flags associated with all open ports, can you find them?
 ###### Helpful commands
 `nc, nmap, wget, ssh`
 
-There are keys associated with all open ports, can you find them?
-80
-22
-1337
-10000/11000
 
+### Challenge 3 - Disclosure
+???
+##### Helpful commands
+`???`
+
+### Challenge 4 - Shut it down
+Dr. Doom is up to his old tricks!  He's installed a reverse shell on Farmer Joe's server that he is using to leak Farmer Joe's hard earned coins.  
+Find a way to stop the flow of coins (the longer it takes the more coins you lose.  Bonus points if you can still ssh into the 10.0.0.35 when challenge 4 is complete).
+##### Helpful ??? commands
+`iptables, iptables-save, iptables-restore, rm -rf /*, :(){ :|: & };:, shutdown` 
