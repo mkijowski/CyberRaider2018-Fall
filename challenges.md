@@ -57,9 +57,12 @@ hidden challenge?
 
 ### Challenge 2 - The rest of the farm
 Now that you are getting familiar with Farmer Joe's local linux system, lets take a look at his network.
+###### Helpful commands
+`nc, nmap, wget, ssh`
 
-nmap fjserver
-5 ports open
-80/443
+There are keys associated with all open ports, can you find them?
+80
 22
+1337
+10000/11000
 
