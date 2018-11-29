@@ -5,5 +5,5 @@ port=10000
 
 while :
 do
-echo "$message" | nc -l $port
+echo "$message" | nc -l $port > /dev/null
 done

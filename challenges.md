@@ -46,13 +46,14 @@ Two files in the **alike** directory have the same contents.  Flags 7 and 8 are 
 
 
 ##### Flag 9 - 
-netcat a local port and it returns a coin
+The next coin is being broadcast from the local machine on port 10000.
 ###### Helpful commands
-
+`cat, nc, wget`
 
 ##### Flag 10 - 
-
+hidden challenge?
 ###### Helpful commands
+???
 
 ### Challenge 2 - The rest of the farm
 Now that you are getting familiar with Farmer Joe's local linux system, lets take a look at his network.
