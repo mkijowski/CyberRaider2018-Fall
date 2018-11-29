@@ -28,8 +28,7 @@ Flag 4 is stored in a file called **spaces in this filename** in the home direct
 
 
 ##### Flag 5 - lost
-This flag is hidden somewhere in the **lost** directory.
-Still need to hide this flag and determine how to find it...
+This flag is hidden somewhere in the **lost** directory in a file that is exactly 503 bytes.
 ###### Helpful commands
 `cd, ls, cat, file, find, du`
 
