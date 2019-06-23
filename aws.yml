@@ -32,11 +32,6 @@ Mappings:
       Arch: HVM64
     t2.small:
       Arch: HVM64
-  AWSRegionArch2AMI:
-    us-east-2:
-      PV64: NOT_SUPPORTED
-      HVM64: ami-965e6bf3
-      HVMG2: NOT_SUPPORTED
 Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
@@ -104,41 +99,29 @@ Resources:
       GroupDescription: Enable SSH access via port 22
       SecurityGroupIngress:
         - IpProtocol: tcp
-          FromPort: '22'
-          ToPort: '22'
+          FromPort: '1'
+          ToPort: '20000'
           CidrIp: !Ref SSHLocation
         - IpProtocol: tcp
-          FromPort: '1025'
-          ToPort: '2048'
-          CidrIp: !Ref SSHLocation
-        - IpProtocol: tcp
-          FromPort: '22'
-          ToPort: '22'
+          FromPort: '1'
+          ToPort: '22000'
           CidrIp: 130.108.0.0/16
         - IpProtocol: -1
           CidrIp: 130.108.0.0/16
-        - IpProtocol: tcp
-          FromPort: '8554'
-          ToPort: '8554'
-          CidrIp: 0.0.0.0/0
-        - IpProtocol: udp
-          FromPort: '8554'
-          ToPort: '8554'
-          CidrIp: 0.0.0.0/0
         - IpProtocol: -1 
           CidrIp: 10.0.0.0/24
   woodstock:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
     Properties:
-      ImageId: ami-2e2a1b4b 
+      ImageId: ami-0f106a778b9e2099e 
       InstanceType: !Ref InstanceType
       KeyName: !Ref KeyName
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: team01-woodstock 
+          Value: woodstock 
       NetworkInterfaces:
         - GroupSet:
             - !Ref InstanceSecurityGroup
@@ -151,7 +134,7 @@ Resources:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
     Properties:
-      ImageId:  ami-562a1b33 
+      ImageId:  ami-0202f10ed8767ccf6
       InstanceType: !Ref InstanceType
       KeyName: !Ref KeyName
       Tags:
@@ -171,14 +154,14 @@ Resources:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
     Properties:
-      ImageId: ami-599887b5
+      ImageId: ami-0cfc6dd3562d121f9 
       InstanceType: !Ref InstanceType
       KeyName: !Ref KeyName
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: team01-bigbird 
+          Value: bigbird 
       NetworkInterfaces:
         - GroupSet:
             - !Ref InstanceSecurityGroup
@@ -187,23 +170,3 @@ Resources:
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
           PrivateIpAddress: 10.0.0.25
-  looper:
-    Type: 'AWS::EC2::Instance'
-    DependsOn: AttachGateway
-    Properties:
-      ImageId: ami-612b1a04 
-      InstanceType: !Ref InstanceType
-      KeyName: !Ref KeyName
-      Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
-        - Key: Name
-          Value: team01-looper
-      NetworkInterfaces:
-        - GroupSet:
-            - !Ref InstanceSecurityGroup
-          AssociatePublicIpAddress: 'false'
-          DeviceIndex: '0'
-          DeleteOnTermination: 'true'
-          SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.10
